@@ -19,17 +19,19 @@
 # ; Найдите сумму цифр любого вещественного или целого числа.
 # ;  Можно использовать decimal. Через строку решать нельзя.
 
-print ('Найти сумму цифр трехзначного числа\n')
-number=int(input('Введите число'))
+print ('Найти сумму цифр трехзначного числа')
+number=int(input('Введите число ='))
 summer_number=0
-
+count=0
 while (number>9):
     didit=number%10 
     number=number//10
-    print(number)
     summer_number=summer_number+didit
+    count=count+1
 else:
     summer_number=summer_number+number
+    count=count+1
+print('Количество цифр введённого числа=', count)
 print('Сумма цифр введённого числа=', summer_number)   
 
 
