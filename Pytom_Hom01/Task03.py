@@ -12,4 +12,30 @@
 # ; Найдите сумму цифр любого вещественного или целого числа.
 # ;  Можно использовать decimal. Через строку решать нельзя.
 print('Проверте счастливый ли билет.')
-bilet=int(input(''))
+bilet=int(input('Номер сласливого билета\n'))
+sum1=0
+sum2=0
+count=1
+while(bilet>9):
+    if(count<4):
+        didital=bilet%10
+        sum1=sum1+didital
+        bilet=bilet//10
+    else:
+            didital=bilet%10
+            sum2=sum2+didital
+            bilet=bilet//10
+       
+    count=count+1
+else:
+    sum2=sum2+bilet
+    if(sum1!=sum2 ):
+        print('билет не счасливый')
+        if(count>6):
+            print('число больше шести знаков ')
+        if (count<6):
+            print('число меньше шести знаков ')
+
+    else: 
+        print(' счасливый')
+print(count, sum1,sum2)
