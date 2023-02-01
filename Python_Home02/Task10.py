@@ -9,11 +9,19 @@ print("Выведите минимальное количество монет, 
 monetki=int(input('количество монет ='))
 orel=0
 reshko=0
+
 count=[]
 for n in range(monetki):
     count.append(randint(0,1))
 print(count)
-# while(monetki>0):
-#     monetki-=1
-#     count.append(count)
+for i in range(len(count)):
+    if count[i]==1: orel=orel+1
+    else: reshko+=1
+if (orel>reshko):
+    print(f'минимальное количество монет, которые нужно перевернуть={reshko}')
+if (orel<reshko):
+    print(f'минимальное количество монет, которые нужно перевернуть={orel}')
+if (orel==reshko):
+    print(f'Без разницы, что нужно перевернуть={orel}')
+
 
