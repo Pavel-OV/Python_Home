@@ -12,12 +12,31 @@ sum=first_number+secont_number
 print(f'Первая подсказка, сумма чисел={sum}')
 multiplicatio=first_number*secont_number
 print(f'Вторая подсказка, умножение чисел={multiplicatio}')
-print(first_number),print(secont_number)
-# if (x>50):
-#     y=True
-# else:
-#     y=False
-# print(f"сгенерированное число х",{x})
-# print(y)
+# x=int(input('X='))
+# y=int(input('Y='))
+# sum1=x+y
+# multiplicatio1=x*y
+#try:
+# while(x+y!=sum and y*x!=multiplicatio):
+#         print(x,y)
+#         print(first_number,secont_number,sum,multiplicatio)
+#         x=int(input('X='))
+#         y=int(input('Y='))
+# print('hhhhh')
+for i in range(sum):
+    for w in range(multiplicatio):
+        if (i+w==sum and i*w==multiplicatio): print('числа равны',i,w)
+    
+
+
+        
+
+    
+    
+             
+   
+        
+            
+
 
 
