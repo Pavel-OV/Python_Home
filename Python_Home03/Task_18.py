@@ -10,3 +10,10 @@
 # 6
 # -> 5
 # Домашнее задание
+from random import randint
+print('Найти в массиве A[1..N] самый близкий по  величине элемент к заданному числу X')
+numberN=int(input('Количество элементов в массиве='))
+spicok=[]
+for i in range(numberN):
+    spicok.append(randint(0,10))
+print(*spicok)
