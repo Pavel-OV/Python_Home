@@ -19,9 +19,23 @@ for i in range(numberN):
 print(*spicok)
 x=int(input('Введите число ='))
 digital=0
-for i in range(len(spicok)):
-    min=abs(spicok[i]-x)
-    if (x==abs(spicok[i]-1) or x==abs(spicok[i]+1)): 
-        print(f'ближайщее число к {x} находится число по индексу {i} значение {spicok[i]} ')
+count=len(spicok)
+# for i in range(len(spicok)):
+   
+#     if (x==spicok[i]-1 or x==spicok[i]+1): 
+#         print(f'ближайщее число к {x} находится число по индексу {i} значение {spicok[i]} ')
+#     else:
+#         print(f'Нет чисел ближайщих к{x}')
+while digital<len(spicok):
+    if (x==spicok[digital]-1 or x==spicok[digital]+1): 
+        print(f'ближайщее число к {x} находится число по индексу {digital} значение {spicok[digital]} ')
+        count+=1
+    digital=digital+1
+if(count==len(spicok)):
+    print(f'Нет чисел ближайщих к{x}')
+   
+
+
+
   
 
