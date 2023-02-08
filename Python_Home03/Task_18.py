@@ -17,3 +17,11 @@ spicok=[]
 for i in range(numberN):
     spicok.append(randint(0,10))
 print(*spicok)
+x=int(input('Введите число ='))
+digital=0
+for i in range(len(spicok)):
+    min=abs(spicok[i]-x)
+    if (x==abs(spicok[i]-1) or x==abs(spicok[i]+1)): 
+        print(f'ближайщее число к {x} находится число по индексу {i} значение {spicok[i]} ')
+  
+
