@@ -19,12 +19,12 @@ number=int(input('Сколько кустов в фермерском хозяй
 spisok=[]
 for i in range(number):
       spisok.append(randint(1,6))
-print('Колличество на каждом кусте', spisok)
+print('Колличество ягод на каждом кусте', spisok)
 spisok=spisok+spisok[:2]
 sum_max=0
-for i in range(len(spisok)-1):    
+for i in range(number):    
         sum=0
-        sum=spisok[i]+spisok[i-1]+spisok[i+1]
+        sum=spisok[i]+spisok[i+2]+spisok[i+1]
         if sum_max<sum: sum_max=sum
 print('Mаксимальное число ягод, которое может собрать за один заход собирающий модуль =',sum_max)
 
