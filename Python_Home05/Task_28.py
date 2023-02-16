@@ -20,32 +20,3 @@ numberB=int(input('Введите число В='))
 print(sum_numbers(numberA,numberB))
 
 
-# s=input('введите выражение')
-# operatory=["+",'-','/','*']
-# print(operatory)
-# s=list(s)
-# digital=[]
-# for i in s:
-#     text=''
-#     if i.isdigit():
-#         text=''.join([text,i])
-#         sp=int(text)
-#         digital.append(sp) 
-# print(digital,type(digital))
-# сделать функцию
-# for i in digital:
-#     i=str(i)
-#     for j in s:
-        
-#         if i==j: s[j]=digital[i]
-#         print(type(s[j]))
-
-# print('sp',sp,type(sp))
-
-#     # for j in operatory:
-#     #     if ==int[i]
-#     # print(s[i])
-
-# print(s)
-# print(s.count(int))
-
