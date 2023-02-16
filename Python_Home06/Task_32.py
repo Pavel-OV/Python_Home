@@ -7,3 +7,15 @@
 # 4, -2, 10, 2, 0, -9, 8, 10, -9,
 # 0, -5, -5, 7]
 # Вывод: [1, 9, 13, 14, 19]
+from random import randint
+number=int(input('Колличество элементов в списке'))
+spisok=[]
+i=0
+while i<number:
+    i=randint(-10,10)
+    spisok.append(i)
+    i+=1
+# for i in number:
+#     i=randint(-10,10)
+#     spisok.append()
+print(spisok)
