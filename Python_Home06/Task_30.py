@@ -7,8 +7,8 @@
 # Ввод: 7 2 5
 # Вывод: 7 9 11 13 15
 first_element=int(input('Первый элемент')) #[7,2,5]
-differ=int(input('Количество элементов'))
 quantity=int(input('Pазность элементов'))
+differ=int(input('Количество элементов'))
 spisok=[]
 i=1
 while i<=differ:
