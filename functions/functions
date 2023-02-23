@@ -28,6 +28,8 @@ for i in range(n):                         # вывод по строчно ли
 
 # mas=[[randint(1,10)for j in range(a)]for i in range(b)]
 
+# Поиск по буквам и рифмы
+
 #text =input('')
 text= "пара-ра-рам рам-пам-папам па-ра-па-дам Парам пам-пам "
 print('Проверяем рифму текста \n',text)
