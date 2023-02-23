@@ -34,7 +34,7 @@ while True:
         save()
         print('Бот остановил свою работу. Заходите ещё раз. будем рады!')
         break
-    elif command=="2":
+    elif command=="7":
         print('Вот текущий список фильмов')
         print(films)
     elif command == "/add":
