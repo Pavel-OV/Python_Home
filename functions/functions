@@ -28,4 +28,14 @@ for i in range(n):                         # вывод по строчно ли
 
 # mas=[[randint(1,10)for j in range(a)]for i in range(b)]
 
-
+#text =input('')
+text= "пара-ра-рам рам-пам-папам па-ра-па-дам Парам пам-пам "
+print('Проверяем рифму текста \n',text)
+rows = text.split()
+ritm = [sum(x in 'уеыаоэяию' for x in lin)
+ for lin in rows]
+ 
+if len(set(ritm)) == 1 :
+    rifma = "Парам пам-пам - рифмы есть"  
+else: rifma = "Пам парам - рифмы нет"
+print(rifma)
